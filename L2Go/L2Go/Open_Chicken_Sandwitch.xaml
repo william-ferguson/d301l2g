@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="LunchToGo.Open_Chicken_Sandwitch"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LunchToGo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="frmOpenChickenSandwitch" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <TextBox x:Name="tbxOpenChickenSandwitch" HorizontalAlignment="Left" Margin="69,57,0,0" TextWrapping="Wrap" Text="Open Chicken Sandwitch" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
+            <TextBox x:Name="tbxBreadChoice" HorizontalAlignment="Left" Margin="0,152,0,0" TextWrapping="Wrap" Text="Bread Choice:" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
+            <RadioButton x:Name="radWhite" Content="White" HorizontalAlignment="Left" Margin="10,203,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radRye" Content="Rye" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radWholemeal" Content="Wholemeal" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="0,608,0,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Width="92" Click="btnBack_Click"/>
+            <Button x:Name="btnFinish" Content="Finish" HorizontalAlignment="Left" Margin="267,608,0,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Width="93" Click="btnFinish_Click"/>
+            <RadioButton x:Name="rad10_30_11" Content="10.30am-11am" HorizontalAlignment="Left" Margin="10,403,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rad11_1130" Content="11am-11.30am" HorizontalAlignment="Left" Margin="10,434,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rad1130_12" Content="11.30am-12pm" HorizontalAlignment="Left" Margin="10,464,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="rad12_1230" Content="12pm-12.30pm" HorizontalAlignment="Left" Margin="10,495,0,0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="tbTimeSelect" HorizontalAlignment="Left" Margin="10,368,0,0" TextWrapping="Wrap" Text="Please select Delevery Time" VerticalAlignment="Top"/>
+
+        </Grid>
+
+    </Grid>
+</Page>

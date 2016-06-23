@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="LunchToGo.Regestration_Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LunchToGo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFFFFFFF">
+        <TextBox x:Name="tbxRegestrationPage" HorizontalAlignment="Left" Margin="110,59,0,0" TextWrapping="Wrap" Text="Regestration" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
+        <TextBox x:Name="tbxNameInput" HorizontalAlignment="Left" Margin="0,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277" PlaceholderText="Insert your name here"/>
+        <TextBox x:Name="tbxAddressInput" HorizontalAlignment="Left" Margin="0,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277" PlaceholderText="Insert your address here"/>
+        <TextBox x:Name="tbxPhoneNumberInput" HorizontalAlignment="Left" Margin="0,292,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277" PlaceholderText="Insert your phone number here"/>
+        <TextBox x:Name="tbxCityInput" HorizontalAlignment="Left" Margin="-2,355,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277" PlaceholderText="Insert your city here"/>
+        <TextBox x:Name="tbxCreditCardNumberInput" HorizontalAlignment="Left" Margin="0,470,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277" PlaceholderText="Insert your credit card number here"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="0,608,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Width="92" Height="32" Click="btnBack_Click"/>
+        <Button x:Name="btnFinish" Content="Finish" HorizontalAlignment="Left" Margin="267,608,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Width="93" Click="btnFinish_Click"/>
+        <TextBox x:Name="tbxEmailAddressInput" HorizontalAlignment="Left" Margin="0,414,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277" PlaceholderText="Insert your email address here"/>
+        <TextBox x:Name="tbxCCExpiryInput" HorizontalAlignment="Left" Margin="-2,523,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139" PlaceholderText="CC expiry"/>
+        <TextBox x:Name="tbxCCSecurityCodeInput" HorizontalAlignment="Left" Margin="142,523,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" PlaceholderText="CC security code"/>
+
+    </Grid>
+</Page>
