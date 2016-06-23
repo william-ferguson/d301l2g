@@ -51,5 +51,25 @@ namespace L2Go
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        private void btnGreenSalad_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Green_Salad_Lunch));
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Lamb_Korma));
+        }
+
+        private void btnOpenChickenSandwitch_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Open_Chicken_Sandwitch));
+        }
+
+        private void btnBeefNoodleSoup_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Beef_Noodle_Salad));
+        }
     }
 }
