@@ -17,8 +17,9 @@
         <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="0,608,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Width="92" Height="32" Click="btnBack_Click"/>
         <Button x:Name="btnFinish" Content="Finish" HorizontalAlignment="Left" Margin="267,608,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Width="93" Click="btnFinish_Click"/>
         <TextBox x:Name="tbxEmailAddressInput" HorizontalAlignment="Left" Margin="0,414,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277" PlaceholderText="Insert your email address here"/>
-        <TextBox x:Name="tbxCCExpiryInput" HorizontalAlignment="Left" Margin="-2,523,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139" PlaceholderText="CC expiry"/>
-        <TextBox x:Name="tbxCCSecurityCodeInput" HorizontalAlignment="Left" Margin="142,523,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" PlaceholderText="CC security code"/>
+        <TextBox x:Name="tbxCCExpiryMonthInput" HorizontalAlignment="Left" Margin="-2,523,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="148" PlaceholderText="CC expiry month"/>
+        <TextBox x:Name="tbxCCSecurityCodeInput" HorizontalAlignment="Left" Margin="-2,571,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136" PlaceholderText="CC security code"/>
+        <TextBox x:Name="tbxCCExpiryYearInput" HorizontalAlignment="Left" Margin="146,523,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" PlaceholderText="CC Expiry year"/>
 
     </Grid>
 </Page>
