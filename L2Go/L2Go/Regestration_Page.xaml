@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="#FFFFFFFF">
-        <TextBox x:Name="tbxRegestrationPage" HorizontalAlignment="Left" Margin="110,59,0,0" TextWrapping="Wrap" Text="Regestration" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
+        <TextBox x:Name="tbxRegestrationPage" HorizontalAlignment="Left" Margin="110,59,0,0" TextWrapping="Wrap" Text="Registration" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
         <TextBox x:Name="tbxNameInput" HorizontalAlignment="Left" Margin="0,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277" PlaceholderText="Insert your name here"/>
         <TextBox x:Name="tbxAddressInput" HorizontalAlignment="Left" Margin="0,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277" PlaceholderText="Insert your address here"/>
         <TextBox x:Name="tbxPhoneNumberInput" HorizontalAlignment="Left" Margin="0,292,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="277" PlaceholderText="Insert your phone number here"/>
