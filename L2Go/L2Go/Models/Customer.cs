@@ -7,6 +7,7 @@ using SQLite.Net.Attributes;
 
 namespace L2Go
 {
+    //class that holds the values for customers and thier information
     class Customer
     {
           [PrimaryKey, AutoIncrement]
