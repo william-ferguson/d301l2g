@@ -8,13 +8,13 @@
     mc:Ignorable="d">
 
     <Grid x:Name="frmLunchToGo" Background="#FFF9F7F7">
-        <TextBox x:Name="textBox" Margin="120,86,113,517" TextWrapping="Wrap" Text="Lunch to Go" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFFB0404"/>
-        <TextBox x:Name="tbxEmailTitle" Margin="71,192,71,411" TextWrapping="Wrap" Text="Email" FontSize="18.667" FontWeight="Bold" TextChanged="tbxEmailTitle_TextChanged" IsReadOnly="True" Background="#FFF90404"/>
-        <TextBox x:Name="tbxEmailInput" Margin="71,224,71,361" TextWrapping="Wrap" Text="" Background="#FFE0D4D4"/>
-        <TextBox x:Name="tbxPasswordTitle" Margin="71,279,71,324" TextWrapping="Wrap" Text="Password" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
-        <TextBox x:Name="tbxPasswordinput" Margin="71,311,71,274" TextWrapping="Wrap" Text="" Background="#FFE2DCDC"/>
-        <Button x:Name="btnLogIn" Content="Login" HorizontalAlignment="Stretch" Margin="71,371,184,237" VerticalAlignment="Stretch" Background="#33F10E0E" Click="btnLogIn_Click"/>
-        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Stretch" Margin="181,371,74,237" VerticalAlignment="Stretch" Background="#33F70808" Click="btnRegister_Click"/>
+        <TextBox x:Name="textBox" Margin="120,86,0,0" TextWrapping="Wrap" Text="Lunch to Go" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFFB0404" HorizontalAlignment="Left" Width="127" Height="37" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxEmailTitle" Margin="71,192,0,0" TextWrapping="Wrap" Text="Email" FontSize="18.667" FontWeight="Bold" TextChanged="tbxEmailTitle_TextChanged" IsReadOnly="True" Background="#FFF90404" HorizontalAlignment="Left" Width="218" Height="37" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxEmailInput" Margin="71,224,0,0" TextWrapping="Wrap" Text="" Background="#FFE0D4D4" HorizontalAlignment="Left" Width="218" Height="55" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxPasswordTitle" Margin="71,279,0,0" TextWrapping="Wrap" Text="Password" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404" HorizontalAlignment="Left" Width="218" Height="37" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxPasswordinput" Margin="71,311,0,0" TextWrapping="Wrap" Text="" Background="#FFE2DCDC" HorizontalAlignment="Left" Width="218" Height="55" VerticalAlignment="Top"/>
+        <Button x:Name="btnLogIn" Content="Login" HorizontalAlignment="Left" Margin="71,371,0,0" VerticalAlignment="Top" Background="#33F10E0E" Click="btnLogIn_Click" Width="105" Height="32"/>
+        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Left" Margin="181,371,0,0" VerticalAlignment="Top" Background="#33F70808" Click="btnRegister_Click" Width="105" Height="32"/>
 
 
     </Grid>

@@ -8,18 +8,18 @@
     mc:Ignorable="d">
 
     <Grid Background="#FFFFFFFF">
-        <TextBox x:Name="tbxRegestrationPage" Margin="110,59,122,544" TextWrapping="Wrap" Text="Registration" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
-        <TextBox x:Name="tbxNameInput" Margin="0,163,83,445" TextWrapping="Wrap" Text="" PlaceholderText="Insert your name here"/>
-        <TextBox x:Name="tbxAddressInput" Margin="0,230,83,378" TextWrapping="Wrap" Text="" PlaceholderText="Insert your address here"/>
-        <TextBox x:Name="tbxPhoneNumberInput" Margin="0,292,83,316" TextWrapping="Wrap" Text="" PlaceholderText="Insert your phone number here"/>
-        <TextBox x:Name="tbxCityInput" Margin="-2,355,85,253" TextWrapping="Wrap" Text="" PlaceholderText="Insert your city here"/>
-        <TextBox x:Name="tbxCreditCardNumberInput" Margin="0,470,83,138" TextWrapping="Wrap" Text="" PlaceholderText="Insert your credit card number here"/>
-        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Stretch" Margin="0,608,268,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Click="btnBack_Click"/>
-        <Button x:Name="btnFinish" Content="Finish" HorizontalAlignment="Stretch" Margin="267,608,0,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Click="btnFinish_Click"/>
-        <TextBox x:Name="tbxEmailAddressInput" Margin="0,414,83,194" TextWrapping="Wrap" Text="" PlaceholderText="Insert your email address here"/>
-        <TextBox x:Name="tbxCCExpiryMonthInput" Margin="-2,523,214,85" TextWrapping="Wrap" Text="" PlaceholderText="CC expiry month"/>
-        <TextBox x:Name="tbxCCSecurityCodeInput" Margin="-2,571,226,37" TextWrapping="Wrap" Text="" PlaceholderText="CC security code"/>
-        <TextBox x:Name="tbxCCExpiryYearInput" Margin="146,523,50,85" TextWrapping="Wrap" Text="" PlaceholderText="CC Expiry year"/>
+        <TextBox x:Name="tbxRegestrationPage" Margin="110,59,0,0" TextWrapping="Wrap" Text="Registration" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404" HorizontalAlignment="Left" Width="128" Height="37" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxNameInput" Margin="0,163,0,0" TextWrapping="Wrap" Text="" PlaceholderText="Insert your name here" HorizontalAlignment="Left" Width="277" Height="32" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxAddressInput" Margin="0,230,0,0" TextWrapping="Wrap" Text="" PlaceholderText="Insert your address here" HorizontalAlignment="Left" Width="277" Height="32" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxPhoneNumberInput" Margin="0,292,0,0" TextWrapping="Wrap" Text="" PlaceholderText="Insert your phone number here" HorizontalAlignment="Left" Width="277" Height="32" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxCityInput" Margin="-2,355,0,0" TextWrapping="Wrap" Text="" PlaceholderText="Insert your city here" HorizontalAlignment="Left" Width="277" Height="32" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxCreditCardNumberInput" Margin="0,470,0,0" TextWrapping="Wrap" Text="" PlaceholderText="Insert your credit card number here" HorizontalAlignment="Left" Width="277" Height="32" VerticalAlignment="Top"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="0,608,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Click="btnBack_Click" Height="32" Width="92"/>
+        <Button x:Name="btnFinish" Content="Finish" HorizontalAlignment="Left" Margin="267,608,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Click="btnFinish_Click" Width="93" Height="32"/>
+        <TextBox x:Name="tbxEmailAddressInput" Margin="0,414,0,0" TextWrapping="Wrap" Text="" PlaceholderText="Insert your email address here" HorizontalAlignment="Left" Width="277" Height="32" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxCCExpiryMonthInput" Margin="-2,523,0,0" TextWrapping="Wrap" Text="" PlaceholderText="CC expiry month" HorizontalAlignment="Left" Width="148" Height="32" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxCCSecurityCodeInput" Margin="-2,571,0,0" TextWrapping="Wrap" Text="" PlaceholderText="CC security code" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="136"/>
+        <TextBox x:Name="tbxCCExpiryYearInput" Margin="146,523,0,0" TextWrapping="Wrap" Text="" PlaceholderText="CC Expiry year" HorizontalAlignment="Left" Width="164" Height="32" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

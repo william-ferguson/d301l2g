@@ -9,12 +9,12 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid x:Name="frmBeefNoodleSalad" Background="White">
-            <TextBox x:Name="tbxBeefNoodleSalad" Margin="90,54,87,549" TextWrapping="Wrap" Text="Beef Noodle Salad" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFFB0404"/>
-            <TextBox x:Name="tbxChilli" Margin="0,152,231,451" TextWrapping="Wrap" Text="Chilli Flakes:" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFFB0404"/>
-            <RadioButton x:Name="radExtraChilliFlakes" Content="Extra Chilli Flakes" HorizontalAlignment="Stretch" Margin="10,205,202,403" VerticalAlignment="Stretch"/>
-            <RadioButton x:Name="radNoChilliFlakes" Content="No Chilli Flakes" HorizontalAlignment="Stretch" Margin="10,242,202,366" VerticalAlignment="Stretch" IsChecked="True"/>
-            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Stretch" Margin="0,608,268,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Click="btnBack_Click"/>
-            <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Stretch" Margin="267,608,0,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Click="btnFinish_Click"/>
+            <TextBox x:Name="tbxBeefNoodleSalad" Margin="90,54,0,0" TextWrapping="Wrap" Text="Beef Noodle Salad" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFFB0404" HorizontalAlignment="Left" Width="183" Height="37" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbxChilli" Margin="0,152,0,0" TextWrapping="Wrap" Text="Chilli Flakes:" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFFB0404" HorizontalAlignment="Left" Width="129" Height="37" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radExtraChilliFlakes" Content="Extra Chilli Flakes" HorizontalAlignment="Left" Margin="10,205,0,0" VerticalAlignment="Top" Width="148" Height="32"/>
+            <RadioButton x:Name="radNoChilliFlakes" Content="No Chilli Flakes" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top" IsChecked="True" Width="148" Height="32"/>
+            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="0,608,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Click="btnBack_Click" Height="32" Width="92"/>
+            <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="267,608,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Click="btnFinish_Click" Width="93" Height="32"/>
 
         </Grid>
 
