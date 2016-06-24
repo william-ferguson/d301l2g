@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using L2Go.Models;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -32,9 +34,37 @@ namespace L2Go
             this.Frame.Navigate(typeof(page_2));
         }
 
-        private void btnFinish_Click(object sender, RoutedEventArgs e)
+        private async void btnFinish_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            Meals m = new Meals();
+            m.Meal = "Lamb korma";
+            if (radHot.IsChecked == true)
+
+            {
+                m.Flavour = "Hot";
+                this.Frame.Navigate(typeof(Delivery_time));
+            }
+
+            else if (radMedium.IsChecked == true)
+            {
+                m.Flavour = "Medium";
+                this.Frame.Navigate(typeof(Delivery_time));
+            }
+
+            else if (radMild.IsChecked == true)
+            {
+                m.Flavour = "Mild";
+                this.Frame.Navigate(typeof(Delivery_time));
+            }
+
+            else
+            {
+                var messageDialog = new MessageDialog("Please make a selection", "Lunch to go");
+                messageDialog.Commands.Add(new UICommand { Label = "Ok", Id = 0 });
+                await messageDialog.ShowAsync();
+            }
+
+            
         }
     }
 }

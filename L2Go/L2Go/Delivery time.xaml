@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="L2Go.Delivery_time"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:L2Go"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="frmDeliveryTime" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="tbxDeliveryTime" HorizontalAlignment="Left" Height="169" Margin="10,10,0,0" TextWrapping="Wrap" Text="Please select your delivery time" VerticalAlignment="Top" Width="340"  FontSize="34.667" FontWeight="Bold" IsReadOnly="True"/>
+        <RadioButton x:Name="rad11_45_12_15" Content="11.45am - 12.15pm" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold"/>
+        <RadioButton x:Name="rad12_15_12_45" Content="12.15pm - 12.45pm" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold"/>
+        <RadioButton x:Name="rad12_45_1_15" Content="12.45pm - 1.15pm" HorizontalAlignment="Left" Margin="10,321,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold"/>
+        <RadioButton x:Name="rad1_15_1_45" Content="1.15pm - 1.45pm" HorizontalAlignment="Left" Margin="10,372,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold"/>
+
+    </Grid>
+</Page>

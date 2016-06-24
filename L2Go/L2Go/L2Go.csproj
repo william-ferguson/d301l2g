@@ -99,6 +99,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Beef_Noodle_Salad.xaml.cs" />
+    <Compile Include="Delivery time.xaml.cs">
+      <DependentUpon>Delivery time.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Green Salad Lunch.xaml.cs" />
     <Compile Include="Lamb_Korma.xaml.cs" />
@@ -135,6 +138,10 @@
     <Page Include="Beef_Noodle_Salad.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Delivery time.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Green Salad Lunch.xaml">
       <Generator>MSBuild:Compile</Generator>
