@@ -8,13 +8,13 @@
     mc:Ignorable="d">
 
     <Grid x:Name="frmGreenSaladLunch" Background="#FFFDFDFD" Margin="0,-4,0,4">
-        <TextBox x:Name="tbxGreenSaladLunchPage" HorizontalAlignment="Left" Margin="90,54,0,0" TextWrapping="Wrap" Text="Green Salad Lunch" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
-        <TextBox x:Name="tbxDressing" HorizontalAlignment="Left" Margin="0,152,0,0" TextWrapping="Wrap" Text="Dressing:" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
-        <RadioButton x:Name="radRanch" Content="Ranch" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" IsChecked="True"/>
-        <RadioButton x:Name="radVinaigrette" Content="Vinaigrette" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radNone" Content="None" HorizontalAlignment="Left" Margin="10,297,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="0,608,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Width="92" Height="32" Click="btnBack_Click"/>
-        <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="267,608,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Width="93" Click="btnFinish_Click" Height="32"/>
+        <TextBox x:Name="tbxGreenSaladLunchPage" Margin="90,54,87,549" TextWrapping="Wrap" Text="Green Salad Lunch" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
+        <TextBox x:Name="tbxDressing" Margin="0,152,258,451" TextWrapping="Wrap" Text="Dressing:" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
+        <RadioButton x:Name="radRanch" Content="Ranch" HorizontalAlignment="Stretch" Margin="10,207,230,401" VerticalAlignment="Stretch" IsChecked="True"/>
+        <RadioButton x:Name="radVinaigrette" Content="Vinaigrette" HorizontalAlignment="Stretch" Margin="10,250,230,358" VerticalAlignment="Stretch"/>
+        <RadioButton x:Name="radNone" Content="None" HorizontalAlignment="Stretch" Margin="10,297,230,311" VerticalAlignment="Stretch"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Stretch" Margin="0,608,268,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Click="btnBack_Click"/>
+        <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Stretch" Margin="267,608,0,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Click="btnFinish_Click"/>
 
     </Grid>
 </Page>

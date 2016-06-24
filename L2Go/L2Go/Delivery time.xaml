@@ -8,11 +8,11 @@
     mc:Ignorable="d">
 
     <Grid x:Name="frmDeliveryTime" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="tbxDeliveryTime" HorizontalAlignment="Left" Height="169" Margin="10,10,0,0" TextWrapping="Wrap" Text="Please select your delivery time" VerticalAlignment="Top" Width="340"  FontSize="34.667" FontWeight="Bold" IsReadOnly="True"/>
-        <RadioButton x:Name="rad11_45_12_15" Content="11.45am - 12.15pm" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold"/>
-        <RadioButton x:Name="rad12_15_12_45" Content="12.15pm - 12.45pm" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold"/>
-        <RadioButton x:Name="rad12_45_1_15" Content="12.45pm - 1.15pm" HorizontalAlignment="Left" Margin="10,321,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold"/>
-        <RadioButton x:Name="rad1_15_1_45" Content="1.15pm - 1.45pm" HorizontalAlignment="Left" Margin="10,372,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold"/>
+        <TextBox x:Name="tbxDeliveryTime" Margin="10,10,10,461" TextWrapping="Wrap" Text="Please select your delivery time"  FontSize="34.667" FontWeight="Bold" IsReadOnly="True" Background="#FFF90404"/>
+        <RadioButton x:Name="rad11_45_12_15" Content="11.45am - 12.15pm" HorizontalAlignment="Stretch" Margin="10,212,79,386" VerticalAlignment="Stretch" FontSize="26.667" FontWeight="Bold" IsChecked="True"/>
+        <RadioButton x:Name="rad12_15_12_45" Content="12.15pm - 12.45pm" HorizontalAlignment="Stretch" Margin="10,270,77,328" VerticalAlignment="Stretch" FontSize="26.667" FontWeight="Bold"/>
+        <RadioButton x:Name="rad12_45_1_15" Content="12.45pm - 1.15pm" HorizontalAlignment="Stretch" Margin="10,321,77,242" VerticalAlignment="Stretch" FontSize="26.667" FontWeight="Bold"/>
+        <RadioButton x:Name="rad1_15_1_45" Content="1.15pm - 1.45pm" HorizontalAlignment="Stretch" Margin="10,372,108,226" VerticalAlignment="Stretch" FontSize="26.667" FontWeight="Bold"/>
 
     </Grid>
 </Page>

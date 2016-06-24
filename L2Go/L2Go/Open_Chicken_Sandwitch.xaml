@@ -9,13 +9,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid x:Name="frmOpenChickenSandwitch" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <TextBox x:Name="tbxOpenChickenSandwitch" HorizontalAlignment="Left" Margin="69,57,0,0" TextWrapping="Wrap" Text="Open Chicken Sandwitch" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
-            <TextBox x:Name="tbxBreadChoice" HorizontalAlignment="Left" Margin="0,152,0,0" TextWrapping="Wrap" Text="Bread Choice:" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
-            <RadioButton x:Name="radWhite" Content="White" HorizontalAlignment="Left" Margin="10,203,0,0" VerticalAlignment="Top" IsChecked="True"/>
-            <RadioButton x:Name="radRye" Content="Rye" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="radWholemeal" Content="Wholemeal" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top"/>
-            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="0,608,0,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Width="92" Click="btnBack_Click"/>
-            <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="267,608,0,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Width="93" Click="btnFinish_Click"/>
+            <TextBox x:Name="tbxOpenChickenSandwitch" Margin="69,57,53,0" TextWrapping="Wrap" Text="Open Chicken Sandwitch" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
+            <TextBox x:Name="tbxBreadChoice" Margin="0,152,219,0" TextWrapping="Wrap" Text="Bread Choice:" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFF90404"/>
+            <RadioButton x:Name="radWhite" Content="White" HorizontalAlignment="Stretch" Margin="10,203,230,0" VerticalAlignment="Top" IsChecked="True"/>
+            <RadioButton x:Name="radRye" Content="Rye" HorizontalAlignment="Stretch" Margin="10,234,230,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radWholemeal" Content="Wholemeal" HorizontalAlignment="Stretch" Margin="10,269,230,339" VerticalAlignment="Stretch"/>
+            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Stretch" Margin="0,608,268,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Click="btnBack_Click"/>
+            <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Stretch" Margin="267,608,0,0" VerticalAlignment="Stretch" RenderTransformOrigin="0.584,1.077" Click="btnFinish_Click"/>
 
         </Grid>
 
