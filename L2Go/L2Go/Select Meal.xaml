@@ -9,7 +9,7 @@
 
     <Grid x:Name="frmSelectMeal" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBox x:Name="tbxSelectMeal" HorizontalAlignment="Left" Margin="113,37,0,0" TextWrapping="Wrap" Text="Select Meal" VerticalAlignment="Top" FontWeight="Bold" FontSize="18.667" IsReadOnly="True" Background="#FFFB0404"/>
-        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Right" Margin="0,608,268,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Width="92" Height="32" Click="btnBack_Click"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="0,608,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.584,1.077" Height="32" Click="btnBack_Click" Width="92"/>
         <Button x:Name="btnGreenSalad" Content="Green salad" HorizontalAlignment="Left" Margin="0,133,0,0" VerticalAlignment="Top" Width="182" Click="btnGreenSalad_Click" Background="#3312F312"/>
         <Button x:Name="btnLambKorma" Content="Lamb korma" HorizontalAlignment="Left" Margin="0,229,0,0" VerticalAlignment="Top" Width="182" Click="button_Click" Background="#33F19208"/>
         <Button x:Name="btnOpenChickenSandwitch" Content="Open chicken sandwitch" HorizontalAlignment="Left" Margin="0,333,0,0" VerticalAlignment="Top" Width="182" Click="btnOpenChickenSandwitch_Click" Background="#3397D11B"/>

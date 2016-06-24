@@ -13,6 +13,8 @@
         <RadioButton x:Name="rad12_15_12_45" Content="12.15pm - 12.45pm" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold" Width="273" Height="42"/>
         <RadioButton x:Name="rad12_45_1_15" Content="12.45pm - 1.15pm" HorizontalAlignment="Left" Margin="10,321,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold" Width="273" Height="77"/>
         <RadioButton x:Name="rad1_15_1_45" Content="1.15pm - 1.45pm" HorizontalAlignment="Left" Margin="10,372,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold" Width="242" Height="42"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="0,597,0,0" VerticalAlignment="Top" Width="77" Height="43" Click="btnBack_Click"/>
+        <Button x:Name="btnFinish" Content="Finish" HorizontalAlignment="Left" Margin="283,597,0,0" VerticalAlignment="Top" Width="77" Height="43"/>
 
     </Grid>
 </Page>
