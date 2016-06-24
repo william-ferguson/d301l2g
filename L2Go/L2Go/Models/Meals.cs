@@ -8,7 +8,7 @@ using SQLite.Net.Attributes;
 namespace L2Go.Models
 {
     //class that holds the meal values
-    class Meals
+    public class Meals
     {
 
         [PrimaryKey, AutoIncrement]

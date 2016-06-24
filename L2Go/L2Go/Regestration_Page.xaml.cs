@@ -12,6 +12,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using SQLite.Net;
+using Windows.Storage;
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -32,11 +35,21 @@ namespace L2Go
             this.Frame.Navigate(typeof(MainPage));
         }
 
+
+        //creates the database connection
+        SQLiteConnection conn;
+        //points to where the database is
+        private string path;
+
+
+
+
         private async void btnFinish_Click(object sender, RoutedEventArgs e)
         {
             string isValid = checkInput();
             if (isValid == "valid")
             {
+                //taking the information provided by the customer during registration and stores it into a new variable called c
                 Customer c = new Customer();
                 c.Name = tbxNameInput.Text;
                 c.Address = tbxAddressInput.Text;
@@ -48,6 +61,12 @@ namespace L2Go
                 c.CreditCardExpiryYear = tbxCCExpiryYearInput.Text;
                 c.CreditCardSecurityCode = tbxCCSecurityCodeInput.Text;
 
+                //creating a new path to the sqlite database
+                path = Path.Combine(ApplicationData.Current.LocalFolder.Path, "db.sqlite");
+                //making the connection to the sqlit database
+                conn = new SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
+
+                var s = conn.Insert(c);// inserts the customer info into the db table
 
                 this.Frame.Navigate(typeof(MainPage));
             }
