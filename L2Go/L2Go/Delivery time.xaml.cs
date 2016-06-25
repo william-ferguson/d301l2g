@@ -25,6 +25,10 @@ namespace L2Go
         public Delivery_time()
         {
             this.InitializeComponent();
+            cmbRegion.Items.Add("Manawatu");
+            cmbRegion.Items.Add("Whanganui");
+            cmbRegion.Items.Add("Wairarapa");
+            cmbRegion.SelectedIndex = 0;
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)

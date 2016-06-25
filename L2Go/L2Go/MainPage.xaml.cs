@@ -49,9 +49,50 @@ namespace L2Go
             this.Frame.Navigate(typeof(Regestration_Page));
         }
 
-        private void btnLogIn_Click(object sender, RoutedEventArgs e)
+        private async void btnLogIn_Click(object sender, RoutedEventArgs e)
         {
+            string loginEmail = tbxEmailInput.Text;
+            string loginPassword = tbxPasswordinput.Text;
+
+            List<Customer> CustomerDetails = conn.Query<Customer>("select * from Customer where EmailAddress = ? and Password = ?", loginEmail, loginPassword);
+
+            if (CustomerDetails.Count == 0)
+            {
+                //show dialog to tell them to put in correct details
+            }
+            else
+            {
+                try
+                {
+                    /* create currentcustomer table
+                     * delete currentcustomer table
+                     * create currentcustomer table
+                    */
+
+                } catch {    }
+
+                /*
+                 * create current customer variable
+                 * put id of first item in the customer details list into the current customer id variable
+                 * insert current customer into the database
+                 */
+
+
+            }
             this.Frame.Navigate(typeof(page_2));
+        }
+        private string checkInput()
+        {
+            string result = "valid";
+            if (string.IsNullOrWhiteSpace(tbxEmailInput.Text))
+                return "Please insert correct email address";
+
+
+            if (string.IsNullOrWhiteSpace(tbxPasswordinput.Text))
+                return "Please insert correct password";
+
+            return result;
+
         }
 
         private async void DBConnection()
@@ -66,5 +107,6 @@ namespace L2Go
 
 
         }
+
     }
 }

@@ -60,6 +60,7 @@ namespace L2Go
                 c.CreditCardExpiryMonth = tbxCCExpiryMonthInput.Text;
                 c.CreditCardExpiryYear = tbxCCExpiryYearInput.Text;
                 c.CreditCardSecurityCode = tbxCCSecurityCodeInput.Text;
+                c.Password = tbxPasswordInput.Text;
 
                 //creating a new path to the sqlite database
                 path = Path.Combine(ApplicationData.Current.LocalFolder.Path, "db.sqlite");

@@ -8,13 +8,15 @@
     mc:Ignorable="d">
 
     <Grid x:Name="frmDeliveryTime" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="tbxDeliveryTime" Margin="10,10,0,0" TextWrapping="Wrap" Text="Please select your delivery time"  FontSize="34.667" FontWeight="Bold" IsReadOnly="True" Background="#FFF90404" Height="169" VerticalAlignment="Top" HorizontalAlignment="Left" Width="340"/>
+        <TextBox x:Name="tbxDeliveryTime" Margin="10,10,0,0" TextWrapping="Wrap" Text="Please select your delivery time and region"  FontSize="34.667" FontWeight="Bold" IsReadOnly="True" Background="#FFF90404" Height="150" VerticalAlignment="Top" HorizontalAlignment="Left" Width="340"/>
         <RadioButton x:Name="rad11_45_12_15" Content="11.45am - 12.15pm" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold" IsChecked="True" Width="271" Height="42"/>
         <RadioButton x:Name="rad12_15_12_45" Content="12.15pm - 12.45pm" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold" Width="273" Height="42"/>
         <RadioButton x:Name="rad12_45_1_15" Content="12.45pm - 1.15pm" HorizontalAlignment="Left" Margin="10,321,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold" Width="273" Height="77"/>
         <RadioButton x:Name="rad1_15_1_45" Content="1.15pm - 1.45pm" HorizontalAlignment="Left" Margin="10,372,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold" Width="242" Height="42"/>
         <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="0,597,0,0" VerticalAlignment="Top" Width="77" Height="43" Click="btnBack_Click"/>
         <Button x:Name="btnFinish" Content="Finish" HorizontalAlignment="Left" Margin="283,597,0,0" VerticalAlignment="Top" Width="77" Height="43"/>
+        <ComboBox x:Name="cmbRegion" HorizontalAlignment="Left" Margin="10,505,0,0" VerticalAlignment="Top" Width="242" PlaceholderText="Region" ToolTipService.ToolTip="Select Region" IsSynchronizedWithCurrentItem="False"/>
+        <TextBlock x:Name="txbSelectRegion" HorizontalAlignment="Left" Margin="16,469,0,0" TextWrapping="Wrap" Text="Please select a region " VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

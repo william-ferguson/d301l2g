@@ -42,6 +42,9 @@ namespace L2Go
 
             {
                 m.Flavour = "Rye";
+                // retrive current customer id and put itno the meal object 
+                // "note; select all from current customer table then get id from the first item in the list.
+                //insert into db
                 this.Frame.Navigate(typeof(Delivery_time));
             }
 

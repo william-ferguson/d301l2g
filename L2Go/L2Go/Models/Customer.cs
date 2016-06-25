@@ -21,6 +21,7 @@ namespace L2Go
         public string CreditCardExpiryMonth { get; set; }
         public string CreditCardExpiryYear { get; set; }
         public string CreditCardSecurityCode { get; set; }
+        public string Password { get; set; }
 
 
 

@@ -17,7 +17,7 @@ namespace L2Go.Models
         public string Flavour { get; set; }
         public string Time { get; set; }
         public string Price { get; set; }
-
+        public int CustID { get; set; }
 
     }
 
