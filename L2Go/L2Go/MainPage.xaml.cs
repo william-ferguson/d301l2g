@@ -68,12 +68,14 @@ namespace L2Go
                      * delete currentcustomer table
                      * create currentcustomer table
                     */
-
+                    conn.CreateTable<CurrentCustomer>();
+                    conn.DeleteAll<CurrentCustomer>();
+                    conn.CreateTable<CurrentCustomer>();
                 } catch {    }
 
                 /*
                  * create current customer variable
-                 * put id of first item in the customer details list into the current customer id variable
+                 * put id of first item that is in the customer details list into the current customers id property
                  * insert current customer into the database
                  */
 
