@@ -33,6 +33,8 @@ namespace L2Go
             cmbRegion.Items.Add("Wairarapa");
             cmbRegion.SelectedIndex = 0;
             time = "11.45am - 12.15pm";
+            path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "db.sqlite");
+            conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
@@ -49,7 +51,7 @@ namespace L2Go
                 OrderRegion = cmbRegion.SelectedItem.ToString()
             };
 
-
+            conn.CreateTable<order>();
 
             List<CurrentCustomer> cl = conn.Query<CurrentCustomer>("select * from CurrentCustomer");
             CurrentCustomer c = cl.First();

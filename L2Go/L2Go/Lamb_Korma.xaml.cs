@@ -27,6 +27,8 @@ namespace L2Go
         public Lamb_Korma()
         {
             this.InitializeComponent();
+            path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "db.sqlite");
+            conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)

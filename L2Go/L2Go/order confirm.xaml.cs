@@ -29,12 +29,15 @@ namespace L2Go
         public order_confirm()
         {
             this.InitializeComponent();
+            path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "db.sqlite");
+            conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
             List<CurrentCustomer> cl = conn.Query<CurrentCustomer>("select * from CurrentCustomer");
             CurrentCustomer c = cl.First();
             tbxName.Text = "name";
             tbxOrder.Text = "order";
             tbxRegion.Text = "region";
             tbxTime.Text = "time";
+          
         }
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)

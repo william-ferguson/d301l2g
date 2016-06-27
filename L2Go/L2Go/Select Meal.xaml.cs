@@ -25,6 +25,7 @@ namespace L2Go
         public page_2()
         {
             this.InitializeComponent();
+
         }
 
         private void tbxGreenSaladLunch_TextChanged(object sender, TextChangedEventArgs e)
