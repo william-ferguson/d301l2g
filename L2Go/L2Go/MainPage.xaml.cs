@@ -59,6 +59,13 @@ namespace L2Go
             if (CustomerDetails.Count == 0)
             {
                 //show dialog to tell them to put in correct details
+                var message = new Windows.UI.Popups.MessageDialog("Login Details are incorrect", "Error");
+                message.Commands.Add(new Windows.UI.Popups.UICommand
+                {
+                    Label = "ok",
+                    Id = 0
+                });
+                await message.ShowAsync();
             }
             else
             {
@@ -78,10 +85,13 @@ namespace L2Go
                  * put id of first item that is in the customer details list into the current customers id property
                  * insert current customer into the database
                  */
+                CurrentCustomer cr = new CurrentCustomer();
+                cr.ID = CustomerDetails.First().ID;
+                conn.Insert(cr);
 
-
+                this.Frame.Navigate(typeof(page_2));
             }
-            this.Frame.Navigate(typeof(page_2));
+            
         }
         private string checkInput()
         {

@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="L2Go.order_confirm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:L2Go"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="frmConfirmOrder" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox x:Name="tbxName" HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="tbxOrder" HorizontalAlignment="Left" Margin="10,152,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="tbxRegion" HorizontalAlignment="Left" Margin="10,189,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="tbxTime" HorizontalAlignment="Left" Margin="10,226,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="tbxOrderConfirmation" HorizontalAlignment="Left" Margin="100,34,0,0" TextWrapping="Wrap" Text="Order Confirmation" VerticalAlignment="Top" TextChanged="textBox_TextChanged"/>
+
+    </Grid>
+</Page>

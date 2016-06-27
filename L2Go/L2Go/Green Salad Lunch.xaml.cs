@@ -34,6 +34,9 @@ namespace L2Go
             this.Frame.Navigate(typeof(page_2));
         }
 
+        SQLite.Net.SQLiteConnection conn;
+        string path;
+
         private async void btnFinish_Click(object sender, RoutedEventArgs e)
         {
             Meals m = new Meals();
@@ -41,18 +44,37 @@ namespace L2Go
             if (radRanch.IsChecked == true)
             {
                 m.Flavour = "Ranch";
+
+                List<CurrentCustomer> cl = conn.Query<CurrentCustomer>("select * from CurrentCustomer");
+                CurrentCustomer c = cl.First();
+                m.ID = c.ID;
+                conn.Insert(m);
+
                 this.Frame.Navigate(typeof(Delivery_time));
             }
 
             else if(radVinaigrette.IsChecked == true)
             {
                 m.Flavour = "Vinigarette";
+
+                List<CurrentCustomer> cl = conn.Query<CurrentCustomer>("select * from CurrentCustomer");
+                CurrentCustomer c = cl.First();
+                m.ID = c.ID;
+                conn.Insert(m);
+
                 this.Frame.Navigate(typeof(Delivery_time));
             }
 
             else if(radNone.IsChecked == true)
             {
                 m.Flavour = "None";
+
+                List<CurrentCustomer> cl = conn.Query<CurrentCustomer>("select * from CurrentCustomer");
+                CurrentCustomer c = cl.First();
+                m.ID = c.ID;
+                conn.Insert(m);
+
+
                 this.Frame.Navigate(typeof(Delivery_time));
             }
 

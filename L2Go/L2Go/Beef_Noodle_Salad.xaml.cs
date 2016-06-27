@@ -33,6 +33,8 @@ namespace L2Go
         {
             this.Frame.Navigate(typeof(page_2));
         }
+        SQLite.Net.SQLiteConnection conn;
+        string path;
 
         private async void btnFinish_Click(object sender, RoutedEventArgs e)
         {
@@ -43,12 +45,24 @@ namespace L2Go
             if (radExtraChilliFlakes.IsChecked == true)
             {
                 m.Flavour = "Extra chilli flakes";
+
+                List<CurrentCustomer> cl = conn.Query<CurrentCustomer>("select * from CurrentCustomer");
+                CurrentCustomer c = cl.First();
+                m.ID = c.ID;
+                conn.Insert(m);
+
                 this.Frame.Navigate(typeof(Delivery_time));
             }
 
             else if (radNoChilliFlakes.IsChecked == true)
             {
                 m.Flavour = "No chilli flakes";
+
+                List<CurrentCustomer> cl = conn.Query<CurrentCustomer>("select * from CurrentCustomer");
+                CurrentCustomer c = cl.First();
+                m.ID = c.ID;
+                conn.Insert(m);
+
                 this.Frame.Navigate(typeof(Delivery_time));
             }
 
